@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    font-family: 'Merienda', cursive;
+}
+nav{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    padding:10px 4%;
+    justify-content: space-between;
+    text-align: center;
+    position:absolute;
+  
+}
+nav.black{
+    background-color: rgba(0, 255, 213, 0.959);
+    padding:8px 3%;
+}
+nav img{
+    width: 150px;
+    transition: .5s;
+    
+}
+nav.black img{
+    width: 150px;
+}
+nav img:hover{
+    transform: scale(1.1);
+    filter: saturate(2);
+}
+.nav-links{
+    
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-family: 'Merienda', cursive;
+}
+.nav-links ul li a{
+    color: #797bfd;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.black .nav-links ul li a{
+    color: rgb(255, 60, 60);
+    font-size: 13px;
+}
+.nav-links ul li a.active,.nav-links ul li a:hover{
+color: #000000;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+
+/* .navbar-brand img{
+width: 150px;
+}
+
+.navbar-brand a{
+    cursor: pointer;
+    font-weight: bold;
+    color:#797bfd ;
+    transition: .5s;
+}
+nav .fa{
+    display: none;
+} */
+
+nav .fa{
+    display: none;
+}
+@media (max-width:900px){
+    .nav-links a{
+        display: block;
+    }
+    .nav-links{
+        position:fixed ;
+        background-color: #ffffff;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: .5s;
+    }
+    nav .fa{
+        display: block;
+        color: #f44336;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links a{
+        padding:  10px;
+       margin-left: 30px;
+        width: 50px;
+    }
+}

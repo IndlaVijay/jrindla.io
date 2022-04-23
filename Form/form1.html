@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeRtZy9VcXUfA9ARzLUpIWh5I2Sw8tLdkZyKmsmEDrjO_yypw/formResponse" method="POST" id="my-form">
+      
+            <div class="form-group">
+              <label for="firstName"> First Name</label>
+              <input type="text" id="firstName" name="0" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="latsName">Last Name</label>
+              <input type="text" id="lastName" name="4" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="massage">Massage</label>
+              <textarea name="massage" id="message" cols="30" rows="10"></textarea>
+            </div>
+      
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div id="status"></div>
+      </section>
+</body>
+</html>

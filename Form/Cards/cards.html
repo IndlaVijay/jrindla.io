@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cards.css">
+</head>
+
+<body>
+<nav>
+    <!-- <img src="" alt="JR Indla"> -->
+    <h1>JR Indla</h1>
+    <div class="nav-links">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
+
+    </div>
+</nav>
+
+
+
+  <section id="card">
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="../../images/p2.png" alt="">
+            </div>
+            <div class="content">
+                <h2>Card One</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum alias quae repellendus sit voluptatum
+                    tempore quia nesciunt, velit asperiores aperiam dolores veniam perferendis molestias voluptate
+                    praesentium quod ipsa aliquid consequuntur?</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../../images/p3.png" alt="">
+            </div>
+            <div class="content">
+                <h2>Card One</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum alias quae repellendus sit voluptatum
+                    tempore quia nesciunt, velit asperiores aperiam dolores veniam perferendis molestias voluptate
+                    praesentium quod ipsa aliquid consequuntur?</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../../images/p6.png" alt="">
+            </div>
+            <div class="content">
+                <h2>Card One</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum alias quae repellendus sit voluptatum
+                    tempore quia nesciunt, velit asperiores aperiam dolores veniam perferendis molestias voluptate
+                    praesentium quod ipsa aliquid consequuntur?</p>
+            </div>
+        </div>
+    </div>
+  </section>
+<section id="form">
+    <div class="form">
+        <form action="">
+            <input type="text" placeholder="Full Name" >
+            <input type="email" placeholder="Email">
+            <input type="number" placeholder="Phone">
+            <input type="submit">
+        </form>
+    </div>
+</section>
+
+
+
+<p>
+    <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
+  </p>
+  
+  <p>
+      <span matBadge="1" matBadgeSize="large">Text with large badge</span>
+  </p>
+  
+  <p>
+    Button with a badge on the left
+    <button mat-raised-button color="primary"
+        matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+      Action
+    </button>
+  </p>
+  
+  <p>
+      Button toggles badge visibility
+      <button mat-raised-button matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+          Hide
+      </button>
+  </p>
+  
+  <p>
+    Icon with a badge
+    <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+      <!-- Include text description of the icon's meaning for screen-readers -->
+      <span class="cdk-visually-hidden">
+        Example with a home icon with overlaid badge showing the number 15
+      </span>
+  </p>
+  
+  
+  
+   
+</body>
+
+</html>

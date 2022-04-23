@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Merienda', cursive;
+    box-sizing: border-box;
+}
+/* Loader */
+
+/* .loader{
+	margin: 70px auto;
+	width: 40px;
+	height: 40px;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	border-top-color: rgb(145, 142, 142);
+	animation: spin 1s linear infinite;
+}
+ @keyframes spin {
+	100%{
+		transform: rotate(360deg);
+      
+	}
+} */
+
+/*  End Loader*/
+
+#work-with p{
+    font-family: 'Itim',cursive;
+}
+#work-with .card{
+    transition: 1s;
+}
+#work-with .card :hover{
+    transform: scale(1.03);
+}
+#work-with .top{
+    background: rgba(250, 55, 55, 0.644);
+    cursor: pointer;
+    
+}
+#work-with .top h2{
+    color: #000000;
+    font-weight: bold;
+}
+#work-with .head::after{
+   content: '';
+   display: block;
+  width: 120px;
+  height: 5px;
+  border-radius: 5px;
+  background: #797bfd;
+  margin-left: 45%;
+  margin-top: 20px;
+  right: 0;
+}
+footer{
+    background-color:rgb(204, 204, 204);
+}
+
+header{
+    background-color:#fff;
+}
+nav a{
+    cursor: pointer;
+    font-weight: bold;
+    color:#797bfd ;
+    transition: .5s;
+}
+nav .fa{
+    display: none;
+}
+
+/* @media (max-width:900px){
+    
+    }
+    .nav-links{
+        position:fixed ;
+        background-color: #ffffff;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: .5s;
+    }
+    nav .fa{
+        display: block;
+        color: #f44336;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links a{
+        padding:  10px;
+       margin-left: 30px;
+        width: 50px;
+    } */
+
+
+header .active{
+    color: #000;
+}
+
+header img{
+    margin-left: 50px;
+    cursor: pointer;
+}
+header .contact{
+    cursor: pointer;
+    transition: .5s;
+    color: #797bfd;
+    margin-right: 50px;
+}
+header img{
+    width: 150px;
+}
+#hero{
+    background-image: linear-gradient( rgba(92, 89, 243, 0.767),rgba(6, 1, 37, 0.842)),url(../images/img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#pricing{
+    background: linear-gradient(rgba(235, 233, 233, 0.931),rgba(214, 248, 245, 0.945)),url(../images/img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer a{
+    cursor: pointer;
+    font-weight: 600;
+}
+footer img{
+    width: 150px;
+}
+svg{
+    transition: .3s;
+}
+footer svg:hover{
+  color: #f36358;
+  transform: scale(1.2);
+}
+
+.req{
+    animation: slideInFromBottom .8s ease;
+}
+.heading1{
+   
+    animation: slideInFromLeft .6s ease-in;
+}
+.heading2{
+    animation: slideInFromLeft 1s ease-in;
+}
+.p1{
+    animation: slideInFromLeft 1.2s ease-in;
+}
+.p2{
+    animation: slideInFromLeft 1.4s ease-in;
+}
+.p3{
+    animation: slideInFromLeft 1.6s ease-in;
+}
+.p4{
+    animation: slideInFromLeft 1.8s ease-in;
+}
+/*==========Animation============*/
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+    
+  }
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  /*==========End Animation============*/
+  #team{
+      background: linear-gradient(rgba(1, 32, 88, 0.644),rgba(1, 51, 47, 0.698)),url(../images/team.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+  #team svg{
+      cursor: pointer;
+      transition: .5s;
+      
+  }
+  #team svg:hover{
+      color: #f36358;
+  }
+  #say .head::after{
+            content: '';
+            display: block;
+            width: 200px;
+            height: 5px;
+            border-radius: 5px;
+            background: #797bfd;
+            margin-left: 40%;
+            margin-top: 30px;
+            right: 0;
+  }
+  #process{
+      box-sizing: border-box;
+      background: linear-gradient(rgba(24, 12, 12, 0.788),rgba(18, 29, 27, 0.667),rgba(21, 25, 39, 0.877)),url(https://www.radiancevisionseo.com/assets/images/blog/Information-Gathering-For-Website-Design.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+  #process h1::after{
+            content: '';
+            display: block;
+            width: 200px;
+            height: 5px;
+            border-radius: 5px;
+            background: #797bfd;
+            margin-left: 40%;
+            margin-top:25px;
+            right: 0;
+  }
+  #process h2{
+      color: #00f7ff;
+      border-left: #797bfd solid 5px;
+     padding:20px  70px;
+     font-family: 'Philosopher',sans-serif; 
+  }
+  #process img{
+      filter: saturate(3);
+  }
+  #portfolio img{
+      cursor: pointer;
+      transition: 1.0s;
+  }
+  #portfolio img:hover{
+       transform: scale(1.03);
+  }
+
+  /*==========Contact==========*/
+
+  #contact{
+      background: linear-gradient(rgba(0, 0, 0, 0.657),rgba(28, 71, 64, 0.815)),url(https://www.paymentsjournal.com/wp-content/uploads/2020/04/global-network-connection-world-map-digital-background_1017-23322.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      box-sizing: border-box;
+  }
+/* .contact{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+} */
+/* .contact h3{
+    font-size: 36px;
+    font-weight: 500;
+} */
+
+/* .contact{
+    flex-basis: 48%;
+    text-align: left;
+    margin-bottom: 10%;
+    
+} */
+.form input,.form textarea{
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    margin-bottom: 15px;
+    border: #ccc solid 1px;
+    background:transparent;
+}
+
+.contact div {
+    padding: 30px 0 30px 50px;
+    display: flex;
+    
+}
+.contact .fa{
+    font-size: 35px;
+    margin: 0 25px;
+    color: #797bfd;
+}
+.contact h2{
+    padding-bottom:10px ;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.contact h5{
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+iframe{
+    width: 80%;
+    margin:3% 10% 0% 10%;
+    height: 50vh;
+}
+
+/*==========End Contact==========*/
+
+#service .head::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;
+    background: #797bfd;
+    margin-left: 43%;
+    margin-top: 30px;
+    right: 0;
+}
